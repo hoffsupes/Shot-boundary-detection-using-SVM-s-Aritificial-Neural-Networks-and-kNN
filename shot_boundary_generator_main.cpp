@@ -2,14 +2,11 @@
 #include "shob_lib.hpp"
 
 /// To actually use this you would need to browse down into the code and create some directories and actually require the labels that I generated
-/// If it is necessary to use this code and see how this works please contact me at dassg@rpi.edu
 
 /// You'll need
 /// a.) The required libraries (OpenCV with C++)
 /// b.) Pseudo install of running environment (Folders with data which are needed)
 /// c.) Actual Training Labels I generated from TRECVID's database along with videos
-/// I've included enough for you to understand how this works, if you also need the instances used for the Artificial Neural Networks, Polynomial SVM and RBF SVM please contact me
-
 /// Also this code was developed on linux so I dont know what kind of additions might be needed to run it on Windows (for the directory handlers)
 
 Ptr<SVM> train_svm(PCA& pca, vector<float> &tra, int featu = 70, int dlimiter_on = 0, unsigned long DLIMIT = 635)
